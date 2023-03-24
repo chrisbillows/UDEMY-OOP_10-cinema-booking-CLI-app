@@ -1,0 +1,46 @@
+Title: Cinema Ticket Booking
+Description: An app where a user can book a cinema seat
+if the seat is free and if the user has balance in their card.
+The app generates a PDF ticket if the purchase is successful.
+Objects: User, Seat, Card, Ticket
+    User:
+        name
+        buy(seat, card)
+    Seat:
+        database
+        seat_id
+        price
+        is_free()
+        occupy()
+    Card:
+        database
+        type
+        number
+        cvc
+        holder
+        validate(price)
+    Ticket:
+        id
+        user
+        price
+        seat
+        to_pdf(path)
+
+user = User("John")
+seat = Seat("A1")
+card = Card("Visa", "12345678")
+user.buy(seat, card)
+
+class Seat:
+
+    def __init__():
+        connection=
+        cursor.execute
+        self.price=cursor.fetchall()
+
+    OR
+
+    def get_price(self):
+        connection =
+        price - cursor.fetchall
+        return  price
